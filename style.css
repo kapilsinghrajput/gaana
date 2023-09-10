@@ -1,0 +1,167 @@
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+font-family: 'Roboto', sans-serif;
+
+    
+    
+}
+button{
+    border: none;
+}
+
+body{
+    background: #1b1b1b;
+    width: 100%;
+    color: white;
+
+}
+header{
+    background: #222428ff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    min-height: 70px;
+
+}
+header .nav_cont{
+
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav_left{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .nav_cont .menu_btn svg{
+    width: 30px;
+    height: 30px;
+}
+
+.logo svg{
+margin-left: -3rem;
+}
+
+
+.search{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    background: #1b1b1b;
+    padding: 10px 20px;
+    border-radius: 80px;
+    border: none;
+    gap: 10px;
+    margin-left: -40px;
+    outline: .1px solid rgba(114, 110, 110, 0.237);
+}
+.search .s_input{
+    color: rgb(94, 94, 94);
+}
+
+
+.search input{
+    background: transparent;
+    border: none;
+    font-size: .8rem;
+    width: 100%;
+    color: white;
+    margin-left: 10px;
+}
+.search input:focus{
+    outline: none;
+}
+
+
+.nav_right{
+    width:28%;
+    display: flex;
+    justify-content: space-between;
+}
+.get_gaana{
+    font-size: .9rem;
+    color: #000000;
+    background: #fff;
+    padding: 0 15px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.language{
+    background: #00000000;
+    color: #000;
+    border: none;
+
+}
+
+.dark_mode{
+    background: #00000000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgb(150, 146, 146);
+}
+
+.login{
+    background: #00000000;
+    font-size: .9rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* nav */
+
+
+
+nav{
+
+padding: 1.5rem 3rem;
+display: flex;
+gap: 30px;
+
+}
+
+nav .nav_link{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+    
+ nav a::before{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    height: 2px;
+    width: 100%;
+    transform: scale(0, 1);
+    border-radius: 50px;
+    background: #c90f0f;
+    transition: .1s ease-in-out;
+
+  
+    /* transition:  0.1s ease; */
+} 
+nav a:hover::before ,  .active::before{
+    transform: scale(1 ,1);
+}
+
